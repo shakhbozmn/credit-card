@@ -1,0 +1,268 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    
+    transition: transform .9s;    
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 43%, rgba(236,223,255,1) 100%); 
+}
+
+
+img{
+    width: 100%;
+    object-fit: contain;
+    margin: 2rem;
+}
+.home__page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60% 40%;
+    background-size: cover;
+    text-align: center;   
+}
+
+.block__content{
+    font-size: 2rem;
+    text-align: left;
+    padding: 3rem;
+}
+
+.btn__secondary{
+    padding:2rem;
+    margin-top: 2rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 2rem;
+    background: none;
+    color: rgb(71, 17, 141);
+   outline: none;
+    transition: .7s;
+    border: 3px solid rgb(71, 17, 141);
+    box-shadow: 0 0 30px 30px rgb(216, 216, 216);
+}
+.btn__secondary:hover{
+    background-color: #860eac;
+    color: white;
+    box-shadow: 0 0 10px 10px rgb(165, 165, 165);
+}
+
+h2{
+    padding-top: 2rem;
+    padding-right: 3rem;
+    font-size: 3rem;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc   ;
+}
+
+.nav__bar{
+   display: flex;
+   align-items: center;
+   margin-bottom: 0;
+   
+}
+
+h1{
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+
+
+.nav__brand{
+   display: flex;
+   justify-content: start;
+}
+
+
+.cards{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    padding: .4rem 2rem;
+    font-size: 1.5rem;
+
+}
+
+a{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.feature__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem 10rem;
+    
+}
+
+.card__number{
+    padding: 1rem;
+    width: 40rem;
+    height: 20rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align:start;
+}
+
+.card-number__label{
+    font-size: 2rem;
+}
+
+
+.btn__primary{
+    padding:2rem;
+    margin-top: 2rem;
+    width: 30rem;
+    border-radius: 10rem;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    transition: .7s;
+    background: linear-gradient(91.88deg,#153bc7 .88%,#860eac 98.71%);
+}
+
+.btn__primary:hover{
+    background: linear-gradient(91.88deg,#153cc7c5 .88%,#870eacaf 98.71%);
+    cursor: pointer;
+    }
+
+    .btn__submit:active{
+        opacity: .6;
+    }
+
+.card__image> img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 40rem;
+    height: 40rem;
+    padding-left: 5rem;
+    
+}
+
+
+.credit__animated:hover{
+    
+}
+
+/*new line*/
+
+:root {
+  --primary-color: #6939a8;
+  --secondary-color: #5c2d70;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  padding: 0.75rem;
+  border-radius: 99px;
+}
+.tabs * {
+  z-index: 2;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 12.3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+.VISA__card{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.Mastercard{
+    font-size: 1.5rem;
+}
+
+
+input[type=radio]:checked + label {
+  color: var(--primary-color);
+}
+
+
+input[id=radio-1]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id=radio-2]:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+input[id=radio-3]:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 4px;
+  width: 123px;
+  background-color: var(--secondary-color);
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+  .tabs {
+    transform: scale(0.6);
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit-card Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header data-aos="zoom-in">
+      <nav class="nav__bar">
+        <section class="nav__brand" data-aos="fade-right">
+          <h1>Credit-Card GENERATOR</h1>
+        </section>
+        <ul class="cards">
+          <div class="container" data-aos="zoom-in">
+            <div class="tabs">
+              <input type="radio" id="radio-1" name="tabs" checked />
+              <label class="tab Mastercard" for="radio-1">Mastercard</label>
+              <input type="radio" id="radio-2" name="tabs" />
+              <label class="tab VISA__card" for="radio-2">VISA</label>
+              <input type="radio" id="radio-3" name="tabs" />
+              <label class="tab" for="radio-3">American Express</label>
+              <span class="glider"></span>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="home__page">
+      <img src="images/3.png" alt="" data-aos="fade-right" />
+      <section data-aos="fade-left">
+        <h2>Credit-Card GENERATOR</h2>
+        <p class="block__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nobis
+          placeat quisquam sapiente nostrum consectetur ut dolorum possimus
+          sequi. Sunt?
+        </p>
+        <button class="btn__secondary" type="submit">Get Started</button>
+      </section>
+    </div>
+    <article class="grid grid--cols-2 feature" data-aos="zoom-in-left">
+      <div class="feature__content">
+        <label class="card-number__label">Credit card Number</label>
+        <textarea class="card__number" id="demo" rows="5"></textarea>
+        <button class="btn__primary" type="submit">Generate</button>
+      </div>
+      <lottie-player
+        src="js/credit.json"
+        background="transparent"
+        class="card__animated"
+        autoplay
+      ></lottie-player>
+    </article>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</html>
